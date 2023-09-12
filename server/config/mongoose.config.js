@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const dbName = process.env.DB;
 const username = process.env.ATLAS_USERNAME;
 const pw = process.env.ATLAS_PASSWORD;
-const uri = `mongodb+srv://${username}:${pw}@YOUR_CONNECTION_STRING_HERE/${dbName}?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${username}:${pw}@mynewproject.hdmd3ri.mongodb.net/${dbName}?retryWrites=true&w=majority`;
 
 mongoose.connect(uri, {
   useNewUrlParser: true,
